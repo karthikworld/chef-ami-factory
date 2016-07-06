@@ -1,0 +1,70 @@
+Resolving cookbook dependencies...
+Fetching 'packer' from source at .
+Using 7-zip (1.0.2)
+Using apt (2.9.2)
+Using bluepill (2.4.3)
+Using build-essential (2.4.0)
+Using chef_handler (1.4.0)
+Using nginx (2.7.6)
+Using compat_resource (12.10.6)
+Using ohai (2.1.0)
+Using packagecloud (0.2.4)
+Using rsyslog (4.0.0)
+Using packer (0.1.0) from source at .
+Using runit (1.7.8)
+Using windows (1.44.1)
+Using yum (3.11.0)
+Using yum-epel (0.7.0)
+Vendoring 7-zip (1.0.2) to vendor/cookbooks/7-zip
+Vendoring apt (2.9.2) to vendor/cookbooks/apt
+Vendoring bluepill (2.4.3) to vendor/cookbooks/bluepill
+Vendoring build-essential (2.4.0) to vendor/cookbooks/build-essential
+Vendoring chef_handler (1.4.0) to vendor/cookbooks/chef_handler
+Vendoring compat_resource (12.10.6) to vendor/cookbooks/compat_resource
+Vendoring nginx (2.7.6) to vendor/cookbooks/nginx
+Vendoring ohai (2.1.0) to vendor/cookbooks/ohai
+Vendoring packagecloud (0.2.4) to vendor/cookbooks/packagecloud
+Vendoring packer (0.1.0) to vendor/cookbooks/packer
+Vendoring rsyslog (4.0.0) to vendor/cookbooks/rsyslog
+Vendoring runit (1.7.8) to vendor/cookbooks/runit
+Vendoring windows (1.44.1) to vendor/cookbooks/windows
+Vendoring yum (3.11.0) to vendor/cookbooks/yum
+Vendoring yum-epel (0.7.0) to vendor/cookbooks/yum-epel
+[1;32mamazon-instance output will be in this color.[0m
+
+[1;32m==> amazon-instance: Prevalidating AMI Name...[0m
+[1;32m==> amazon-instance: Inspecting the source AMI...[0m
+[1;32m==> amazon-instance: Creating temporary keypair: packer 577c9b08-afb5-a3eb-2a6e-a73d7bb7136e[0m
+[1;32m==> amazon-instance: Creating temporary security group for this instance...[0m
+[1;32m==> amazon-instance: Authorizing access to port 22 the temporary security group...[0m
+[1;32m==> amazon-instance: Launching a source AWS instance...[0m
+[0;32m    amazon-instance: Instance ID: i-f24a5067[0m
+[1;32m==> amazon-instance: Waiting for instance (i-f24a5067) to become ready...[0m
+[1;32m==> amazon-instance: Waiting for SSH to become available...[0m
+[1;32m==> amazon-instance: Connected to SSH![0m
+[1;32m==> amazon-instance: Provisioning with chef-solo[0m
+[0;32m    amazon-instance: Installing Chef...[0m
+[0;32m    amazon-instance: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current[0m
+[0;32m    amazon-instance: Dload  Upload   Total   Spent    Left  Speed[0m
+[0;32m    amazon-instance: 0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: www.chef.io[0m
+[0;32m    amazon-instance: sudo: unable to resolve host ip-172-31-25-220[0m
+[0;32m    amazon-instance: Creating directory: /tmp/packer-chef-client[0m
+[0;32m    amazon-instance: sudo: unable to resolve host ip-172-31-25-220[0m
+[0;32m    amazon-instance: sudo: unable to resolve host ip-172-31-25-220[0m
+[0;32m    amazon-instance: Creating directory: /tmp/packer-chef-client/cookbooks-0[0m
+[0;32m    amazon-instance: sudo: unable to resolve host ip-172-31-25-220[0m
+[0;32m    amazon-instance: sudo: unable to resolve host ip-172-31-25-220[0m
+[0;32m    amazon-instance: Creating configuration file 'solo.rb'[0m
+[0;32m    amazon-instance: Creating JSON attribute file[0m
+[0;32m    amazon-instance: Executing Chef: sudo chef-solo --no-color -c /tmp/packer-chef-client/solo.rb -j /tmp/packer-chef-client/node.json[0m
+[0;32m    amazon-instance: sudo: unable to resolve host ip-172-31-25-220[0m
+[0;32m    amazon-instance: sudo: chef-solo: command not found[0m
+[1;32m==> amazon-instance: Terminating the source AWS instance...[0m
+[1;32m==> amazon-instance: Deleting temporary security group...[0m
+[1;32m==> amazon-instance: Deleting temporary keypair...[0m
+[1;31mBuild 'amazon-instance' errored: Error executing Chef: Non-zero exit status: 1[0m
+
+==> Some builds didn't complete successfully and had errors:
+--> amazon-instance: Error executing Chef: Non-zero exit status: 1
+
+==> Builds finished but no artifacts were created.

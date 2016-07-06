@@ -1,0 +1,27 @@
+Resolving cookbook dependencies...
+Fetching 'packer' from source at .
+Using 7-zip (1.0.2)
+Using apt (2.9.2)
+Using bluepill (2.4.3)
+Using build-essential (2.4.0)
+Using chef_handler (1.4.0)
+Using nginx (2.7.6)
+Using compat_resource (12.10.6)
+Using ohai (2.1.0)
+Using packagecloud (0.2.4)
+Using rsyslog (4.0.0)
+Using packer (0.1.0) from source at .
+Using runit (1.7.8)
+Using windows (1.44.1)
+Using yum (3.11.0)
+Using yum-epel (0.7.0)
+Vendoring 7-zip (1.0.2) to vendor/cookbooks/7-zip
+Vendoring apt (2.9.2) to vendor/cookbooks/apt
+Vendoring bluepill (2.4.3) to vendor/cookbooks/bluepill
+Vendoring build-essential (2.4.0) to vendor/cookbooks/build-essential
+Vendoring chef_handler (1.4.0) to vendor/cookbooks/chef_handler
+Vendoring compat_resource (12.10.6) to vendor/cookbooks/compat_resource
+Vendoring nginx (2.7.6) to vendor/cookbooks/nginx
+Vendoring ohai (2.1.0) to vendor/cookbooks/ohai
+Vendoring packagecloud (0.2.4) to vendor/cookbooks/packagecloud
+Vendoring packer (0.1.0) to vendor/cookbooks/packer
